@@ -69,9 +69,14 @@ module.exports = function (opts) {
             lines.splice(3)
             lines.push('[full message: https://gitter.im/' + opts.gitterRoom + '?at=' + message.id + ']')
           }
-
+          // Send Message
           var text = lines.map(function (line) {
+            if (text.charAt(0)== "." && text.charAt(1)=="m" && text.charAt(2)=="e") {
+              var metext = "/me" + text
+              return metext
+            } else{
             return line
+            }
           }).join('\n')
 
           // mark message as read by bot
