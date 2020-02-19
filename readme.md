@@ -1,4 +1,12 @@
-# gitter-irc-bot
+
+# gitter-irc-bot forked by LakesideMiners
+
+## Modifications Made
+As I am going to be the only one in the gitter room, i dont need my name prefixing my message. so prefix removed.
+
+
+
+# Orginal readme.md
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 Bot that synchronises messages from a gitter room and an irc channel.
